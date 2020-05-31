@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Geometria';
+  src: local('../fonts/Geometria'), local('../fonts/Geometria'),
+    url('../fonts/Geometria.woff2') format('woff2'),
+    url('../fonts/Geometria.woff') format('woff'),
+    url('../fonts/Geometria.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('../fonts/Geometria Medium'), local('../fonts/Geometria-Medium'),
+    url('../fonts/Geometria-Medium.woff2') format('woff2'),
+    url('../fonts/Geometria-Medium.woff') format('woff'),
+    url('../fonts/Geometria-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('../fonts/Geometria Bold'), local('../fonts/Geometria-Bold'),
+    url('../fonts/Geometria-Bold.woff2') format('woff2'),
+    url('../fonts/Geometria-Bold.woff') format('woff'),
+    url('../fonts/Geometria-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

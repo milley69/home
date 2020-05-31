@@ -1,0 +1,370 @@
+//
+
+@import 'font.css'
+
+*, *::after, *::before
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html
+  overflow-x: hidden
+  overflow-y: scroll
+
+body
+  font-family: "Geometria", sans-serif
+  font-size: 20px
+
+.container
+  max-width: 1170px
+  margin: 0 auto
+
+header
+  height: 80px
+  color: #284157
+  align-items: center
+  display: grid
+  grid-template-columns: 222px 636px
+  grid-column-gap: 311px
+.header_leftside
+  padding-bottom: 6px
+
+.header_rightside
+  display: grid
+  grid-template-columns: 135px 344px
+  grid-column-gap: 159px
+  padding-bottom: 11px
+.header_time
+  display: grid
+  grid-template-columns: 92px 18px
+  align-items: center
+  grid-column-gap: 26px
+.header_time_text
+  text-align: right
+  p
+    font-size: 12px
+    font-weight: 700
+    line-height: 19px
+    &:nth-child(2)
+      font-weight: 400
+.header_time_ico
+  i
+    font-size: 18px
+    background: linear-gradient(221deg, #fb2b2b 0%, #f86c26 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    float: right
+
+.header_phone
+  display: grid
+  grid-template-columns: 145px 170px
+  grid-column-gap: 28px
+  button
+    width: 170px
+    height: 50px
+    border-radius: 5px
+    background-color: #ffb111
+    background-image: -webkit-linear-gradient(131deg, #fb2b2b 0%, #f86c26 100%)
+    background-image: -o-linear-gradient(131deg, #fb2b2b 0%, #f86c26 100%)
+    background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%)
+    color: #ffffff
+    font-size: 12px
+    font-weight: 700
+    letter-spacing: 0.42px
+    border: none
+    display: inline-block
+    animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19)
+    transition: .3s
+    &:hover
+      -webkit-box-shadow: 4px 4px 0px 0px #284157
+      -moz-box-shadow: 4px 4px 0px 0px #284157
+      box-shadow: 4px 4px 0px 0px #284157
+.header_phone_text
+  p
+    font-size: 12px
+    font-weight: 400
+    line-height: 15px
+    letter-spacing: 0.12px
+    padding-top: 7px
+  a
+    text-decoration: none
+    font-size: 15px
+    font-weight: 700
+    line-height: 19px
+    letter-spacing: 0.15px
+    color: #284157
+    margin-left: -2px
+    &:hover
+      text-decoration: underline
+
+#header
+  height: 600px
+  background: url(../img/header/header_bg.png) no-repeat center -5px
+  & .container
+    display: grid
+    grid-template-columns: 504px 369px
+    grid-column-gap: 297px
+    padding-top: 62px
+
+.header_main_text
+  h1
+    color: #ffffff
+    font-size: 36px
+    font-weight: 700
+    line-height: 32px
+    letter-spacing: 0.36px
+    margin-left: -2px
+  p
+    color: #ffffff
+    font-size: 18px
+    font-weight: 500
+    line-height: 26px
+    padding-top: 38px
+    margin-left: 1px
+    &:nth-child(3)
+      font-size: 16px
+      font-weight: 400
+      line-height: 24px
+      padding-top: 33px
+      margin-left: -1px
+
+.header_secondary_text
+  padding-top: 198px
+  margin-left: -1px
+  display: grid
+  grid-template-columns: 103px 93px 109px
+  grid-column-gap: 100px
+  h5
+    color: #ffffff
+    font-size: 14px
+    font-weight: 500
+    &:nth-child(3)
+      margin-left: 5px
+    p
+      padding-top: 7px
+      font-size: 12px
+      font-weight: 400
+
+.header_form
+  margin-top: 130px
+  width: 369px
+  height: 206px
+  background: #ffffff
+  position: relative
+  &::before, &::after
+    content: ""
+    width: 0
+    height: 0
+    position: absolute
+    left: 0
+    border-left: 184.5px solid transparent
+    border-right: 184.5px solid transparent
+  &::before
+    top: -108px
+    border-bottom: 108px solid #ffffff
+  &::after
+    bottom: -108px
+    border-top: 108px solid #ffffff
+
+  h1
+    position: absolute
+    top: -30px
+    left: 78px
+    color: #284157
+    font-size: 16px
+    font-weight: 500
+    text-align: center
+.form_input
+  text-align: center
+  padding-top: 64px
+  input[type="text"]
+    width: 190px
+    height: 45px
+    outline: none
+    text-align: center
+    font-family: "Geometria", sans-serif
+    color: rgba(0, 0, 0, 5)
+    font-size: 12px
+    font-weight: 400
+    letter-spacing: 0.12px
+    border-radius: 5px
+    border: 1px solid #dcdcdc
+    &:first-child
+      margin-bottom: 10px
+  button[type="submit"]
+    width: 190px
+    height: 50px
+    position: absolute
+    top: 179px
+    left: 89px
+    z-index: 5
+    padding-bottom: 3px
+    border-radius: 5px
+    background-color: #ffb111
+    background-image: -webkit-linear-gradient(131deg, #fb2b2b 0%, #f86c26 100%)
+    background-image: -o-linear-gradient(131deg, #fb2b2b 0%, #f86c26 100%)
+    background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%)
+    color: #ffffff
+    font-size: 13px
+    font-weight: 500
+    letter-spacing: 0.13px
+    border: none
+    display: inline-block
+    animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19)
+    transition: .3s
+
+// projects
+#projects
+  h1
+    text-align: center
+    color: #284157
+    font-size: 30px
+    font-weight: 700
+    padding-top: 90px
+    margin-left: 3px
+
+.wrapper .tabs .active
+  border-radius: 5px
+  border: 2px solid #41596b
+  padding: 7px 12px 6px
+  margin-right: 13px
+
+.wrapper .tabs
+  text-align: center
+  padding-top: 64px
+  // margin-left: -13px
+  margin: 0 auto
+.wrapper .tabs .tab
+  color: #2a4258
+  font-weight: 500
+  font-size: 18px
+  text-transform: uppercase
+
+.projects
+  width: 370px
+  height: 485px
+  border-radius: 5px
+  border: 1px solid #e8e8e8
+  background-color: #ffffff
+  text-align: center
+  margin: 50px auto 0
+  img
+    width: 370px
+    height: 240px
+  h4
+    color: #284157
+    font-family: "Geometria"
+    font-size: 20px
+    font-weight: 500
+    margin-left: -4px
+    padding: 19px 0 20px
+  p
+    color: #284157
+    font-family: "Geometria"
+    font-size: 16px
+    font-weight: 400
+    line-height: 30px
+    margin-left: -5px
+    padding-bottom: 24px
+  a
+    width: 210px
+    display: block
+    height: 60px
+    border-radius: 5px
+    background-color: #ffffff
+    background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%)
+    color: #ffffff
+    font-family: "Geometria"
+    font-size: 13px
+    font-weight: 500
+    text-decoration: none
+    padding-top: 5.6%
+    padding-left: 1.2%
+    margin: 0 auto
+    animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19)
+    transition: .3s
+    &:hover
+      -webkit-box-shadow: 0px 0px 8px 0px #284157
+      -moz-box-shadow: 0px 0px 8px 0px #284157
+      box-shadow: 0px 0px 8px 0px #284157
+
+
+#owl-1 .owl-nav
+    margin-top: 51px
+#owl-1 .owl-dots .owl-dot
+  outline: none
+  margin-left: 3px
+  margin-right: 3px
+#owl-1 .owl-dots .owl-dot span
+  width: 20px
+  height: 20px
+  border: 1px solid #41596b
+  background: none
+  outline: none
+  &:hover
+    border: 2px solid #41596b
+
+#owl-1 .owl-dots .owl-dot.active span,
+  background: none
+  border: 3px solid #41596b
+  outline: none
+#owl-1 .owl-dots .owl-dot:hover span
+  background: none
+
+#owl-1 .owl-prev i, #owl-1  .owl-next i
+  color: #41596b
+  font-size: 28px
+  margin-top: 2px
+  animation-timing-function: ease-in-out
+  transition: .3s
+  &:hover
+    opacity: 0.7
+
+#owl-1 .owl-nav [class*=owl-]
+  outline: none
+  &:hover
+    background: none
+
+#owl-1 .owl-prev, #owl-1  .owl-next
+  position: absolute
+  top: 93%
+
+#owl-1 .owl-prev
+  left: 477px
+#owl-1 .owl-next
+  right: 477px
+
+
+
+
+// plan
+#plan
+  height: 1439px
+  background: url(../img/plan/plan_bg.png) no-repeat center -5px
+.plan_leaves
+  background: url(../img/plan/leaves.png) no-repeat center -5px
+
+#owl-2 .owl-item a
+  width: 370px
+  height: 245px
+  display: block
+  border-radius: 5px
+  background-color: #44af1e
+  &:hover
+    // filter: sepia(1) hue-rotate(320deg) saturate(10)
+    // background-color: #44af1e
+    // filter: Alpha(opacity=40)
+    // -moz-opacity: 0.4
+    // -khtml-opacity: 0.4
+    // opacity: 0.4
+    // filter: alpha(opacity=40)
+    filter: custom(#44af1e)
+
+
+
+
+
+
+
+
+// qwe
